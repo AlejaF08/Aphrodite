@@ -1,0 +1,341 @@
+
+/*Tipografía*/
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+#header, #body, #footer{
+    font-family: 'Italiana', sans-serif;
+    font-weight: 400;
+}
+
+
+
+/*--------------ESTILOS RESET--------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li , a {
+    display: inline-block;
+    list-style: none;
+    font-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+#body {
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Italiana', sans-serif;
+    position: relative;
+    background-color: #F3D8E8;
+}
+
+
+/*---------------INDEX----------------------*/
+/*--------------HEADER- MENU --------------*/
+#header {
+    width: 100%;
+    position: fixed;
+    background-color: #f3d8e8a3;
+    backdrop-filter: blur(14px);
+    top: 0px;
+}
+
+#nav {
+    width: 100%;
+    background-color: #d5888762;
+    text-align: center;
+    padding: 15px;
+}
+
+
+#nav ul li a{
+    margin-left: 10px;
+    font-size: 28px;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.header_flex {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header_flex-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.header_flex-carrito {
+    width: 40%;
+}
+
+.header_flex-carrito img {
+    width: 15%;
+    margin: 21px 0 0 auto;
+}
+
+.header_flex-logo img {
+    margin: 0 0 0 auto;
+}
+
+nav#nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+/*espacio entre la primera secion y el header fixed*/
+
+
+/*--------------MAIN--------------*/
+
+
+main section:first-child {
+    padding: 12rem 0 0 0;
+}
+
+#bannerproductos{
+    width: 95%;
+    height: auto;
+    background-color: #F7A0B3;
+    border-radius: 20px;
+    margin: 0 auto 0 auto;
+    padding: 30px 40px 30px;
+}
+
+#bannerproductos > h1 
+{
+    margin: 40px auto 40px auto;
+    border-bottom: 2px solid black;
+    width: max-content;
+    ;
+
+}
+
+.prod_boxes img {
+    margin: auto;
+    padding: 25px;
+}
+
+.prod_boxes {
+
+width: 300px;
+border-radius: 10px;
+background-color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 0px 5px 5px 5px;
+
+}
+
+.flex_prod {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+font-size: x-large;
+text-align: center;
+}
+
+h3{
+font-size: large;
+text-align: center;
+}
+
+.btn-carrito {
+    font-size: 18px;
+    border-radius: 3px;
+    color: #69071e;
+    font-weight: bold;
+    background-color: #F48787;
+    text-align: center;
+    width: max-content;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    transition: all 0.5s;
+
+}
+
+.btn-carrito:hover {
+
+    color: white;
+    background: black;
+}
+
+.footerRedes {
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footerRedes article {
+
+    width: 5%;    
+}
+
+/*--------------FOOTER--------------*/
+
+#footer{
+    margin: 10px 0 0 0;
+    padding: 8px 0;
+    background-color: #d5888762;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    color: black;
+}
+/*---------------INDEX----------------------*/
+
+
+/*---------------PRODUCTOS-------------------*/
+
+/*MAIN*/
+
+.h2tp {
+
+    display: flex;
+    padding: 10px 0 15px 0;
+}
+
+.ListProd {
+
+    list-style: none;
+    padding: 0;
+}
+
+.list1 {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+
+/*----------TIENDAS-----------*/
+
+
+.h1ti {
+
+    font-size: 30px;
+    text-align: left;
+    padding: 16px;
+}
+
+.h2ti {
+
+    font-size: 30px;
+    text-align: left;
+    padding: 16px;
+}
+
+
+
+
+/*--------CONTACTO-----------*/
+
+.h2pc {
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+
+}
+p{
+
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+.wh-50 {
+
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+
+}
+
+main section .contacto {
+    padding: 50px 0 0 0;
+}
+
+section .content-boletin {
+    padding: 0;
+    background-image:url(../images/Bannercontacto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wh-100 {
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+
+}
+
+.ax-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ax-form fieldset {
+    width: 50%;
+    padding: 0 20px;
+    margin: 0 0 2rem 0;
+}
+
+.ax-form .wh-100 {
+    width: 100%;
+}
+
+.ax-campo {
+    position: relative;
+}
+
+.ax-campo input[type="text"],
+.ax-campo input[type="email"],
+.ax-campo select,
+.ax-campo textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: none;
+}
+.ax-error {
+    display: none;
+}
+
+
+
+.guardar-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #F4A0A5;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
