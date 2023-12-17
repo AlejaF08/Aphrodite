@@ -339,3 +339,21 @@ section .content-boletin {
     text-decoration: none;
 }
 
+
+/*-----------ESTILOS GRILLA PAG PRODUCTOS-----------*/
+
+#Gridprodu {
+
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 400px 500px;
+gap: 20px;
+
+
+}
+
+.boxgrid img {
+
+width: 100%;
+
+}
