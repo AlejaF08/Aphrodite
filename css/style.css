@@ -1,5 +1,5 @@
 
-/*Tipografía*/
+/*Tipografia*/
 
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
@@ -41,6 +41,7 @@ li , a {
     background-color: #f3d8e8a3;
     backdrop-filter: blur(14px);
     top: 0px;
+    z-index: 20;
 }
 
 #nav {
@@ -54,6 +55,7 @@ li , a {
 #nav ul li a{
     margin-left: 10px;
     font-size: 28px;
+    position: relative;
 }
 
 
@@ -90,6 +92,19 @@ img {
 nav#nav ul {
     display: flex;
     justify-content: space-around;
+    margin: 0;
+    /* flex-wrap: wrap; */
+}
+#nav ul li a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: all 0.5s;
+}
+#nav ul li a:hover:after {
+    width: 100%;
 }
 /*espacio entre la primera secion y el header fixed*/
 
@@ -106,7 +121,7 @@ main section:first-child {
     height: auto;
     background-color: #F7A0B3;
     border-radius: 20px;
-    margin: 0 auto 0 auto;
+    margin: 23px auto 0 auto;
     padding: 30px 40px 30px;
 }
 
@@ -139,6 +154,8 @@ padding: 0px 5px 5px 5px;
 .flex_prod {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
 }
 
 h1 {
@@ -200,7 +217,6 @@ text-align: center;
     text-align: center;
     color: black;
 }
-/*---------------INDEX----------------------*/
 
 
 /*---------------PRODUCTOS-------------------*/
@@ -219,12 +235,7 @@ text-align: center;
     padding: 0;
 }
 
-.list1 {
-
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-}
+.list1 {display: flex;align-items: center;margin-bottom: 8px;gap: 0rem;width: 100%;}
 
 
 /*----------TIENDAS-----------*/
@@ -335,25 +346,247 @@ section .content-boletin {
     background-color: #F4A0A5;
     color: black;
     border: none;
-    border-radius: 4px;
+    border-radius: 13px;
     text-decoration: none;
+    width: max-content;
+    font-weight: bold;
+    transition: all 0.8s;
+    display: block;
+    padding: 0.7rem 5rem;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background-color: #d4737dc7;
+    color: #fff;
+}
+
+/*-----------ESTILOS GRILLA PAG PRODUCTOS--------*/
+
+
+.boxgrid img{
+
+    object-fit: cover;
+}
+
+.gridp3 {
+    grid-row-start: span 2;
+}
+
+/*----------ESTILOS TIENDAS----------*/
+
+.tiendas__container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+
+}
+
+.tiendas__box {
+    width: 600px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(247, 236, 243);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.tiendas__ubicacion {
+    width: 100%;
+    border: 0;
+}
+#tiendas {
+    margin: 3rem 0  0 0;
+}
+
+.tiendas__ubicacion iframe {
+    width: 95%;
+    height: 480px;
+}
+
+.tiendas__text {
+    font-size: 31px;
+    margin: 1rem 0 0 0;
+    color: #d48686;
+}
+
+.tiendas__box p {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 
-/*-----------ESTILOS GRILLA PAG PRODUCTOS-----------*/
+/*----------ESTILOS CHECK----------*/
 
-#Gridprodu {
+.list1 input[type="checkbox"] {
+    appearance: none;
+    border: 2px solid #d57d82;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 1%  0 0;
+}
 
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 400px 500px;
-gap: 20px;
+.list1 input[type="checkbox"] + span {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
 
+.list1 label {
+    width: 100%;
+}
+.list1 input[type="checkbox"]:checked {
+    background-image: url(../images/check.png);
+    background-size: cover;
+    border: 1px solid transparent;
+    background-repeat: no-repeat;
+}
+
+.list1 input[type="checkbox"]:checked {
+    border: 2px solid #b51c25;
+    background-image: url(../images/check.png);
+    appearance: initial;
+    border: 1px solid transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list1 input[type="checkbox"]:checked + span{
+    font-weight: bold; 
 
 }
 
-.boxgrid img {
+/*----------PRODUCTOS----------*/
 
-width: 100%;
+.margin-auto {
+    margin: 0 auto;
+}
 
+.container-lanzamientos {
+    margin: 3rem 0 0 0;
+    padding: 0 3rem;
+}
+
+.lanzamientos__items img {
+    margin: 0 0 2rem 0;
+}
+
+.lanzamientos {
+    align-items: center;
+}
+
+/*----------INICIO RESPONSIVE----------*/
+
+@media screen and (max-width: 767px){
+h1{
+    font-size: 26px;
+}
+h2{
+    font-size: 22px;
+}
+h3{
+    font-size: 18px;
+}
+p{
+    font-size: 16px;
+    padding: 1rem;
+}    
+    
+    .header_flex-carrito img {
+    margin: 0 auto;
+    width: 35%;
+}
+
+nav#nav ul {
+    flex-wrap: wrap;
+    padding: 0;
+}
+#nav ul li a {
+    font-size: 22px;
+}
+
+#bannerproductos > h1 {
+    margin: 11px auto 40px auto;
+}
+
+#bannerproductos {
+    margin: 2rem auto 0 auto;
+    padding: 30px 22px 30px;
+}
+
+.flex_prod {
+    justify-content: center;
+}
+#footer {
+    height: auto;
+}
+.flex_prod {
+    flex-wrap: wrap; 
+}
+#tiendas {
+    margin: 2rem 0  0 0;
+}
+
+.tiendas__ubicacion iframe {
+    height: 280px;
+    width: 100%;
+}
+
+.tiendas__text {
+    font-size: 25px;
+}
+
+.tiendas__box p {
+    font-size: 16px;
+    padding: 0.5rem;
+}
+.ax-form fieldset {
+    width: 100%;
+    margin: 0 0  1rem 0;
+}
+
+.h2pc {
+    font-size: 25px;
+    padding:  0 1rem;
+    margin: 0rem 0 1rem 0;
+}
+
+.h2pc + p {
+    padding: 0 1rem;
+}
+
+section .content-boletin {
+    padding: 1rem 0 0 0;
+}
+
+.guardar-btn {
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 560px){
+    .header_flex-carrito img {
+    width: 47%;
+}
+    main section:first-child {
+    padding: 9rem 0 0 0;
+}
+    section .content-boletin {
+    margin: 2rem 0  0 0px;
+}    
+}
+
+
+@media screen and (max-width: 420px){
+    .header_flex-carrito img {
+    width: 64%;
+}
+}
+
+@media screen and (max-width: 410px){
+    section .content-boletin {
+    margin: 3rem 0  0 0px;
+}
+}
 }
