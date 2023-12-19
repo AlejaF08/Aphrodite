@@ -562,6 +562,10 @@ section .content-boletin {
 .guardar-btn {
     justify-content: center;
 }
+.home section:first-child {
+    padding: 11rem 0 0 0;
+}    
+    }
 
 
 
@@ -587,6 +591,5 @@ section .content-boletin {
 @media screen and (max-width: 410px){
     section .content-boletin {
     margin: 3rem 0  0 0px;
-}
 }
 }
