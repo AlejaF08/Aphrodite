@@ -1,0 +1,3 @@
+[submodule "Aphrodite"]
+    path = Aphrodite
+    url = https://github.com/AlejaF08/Aphrodite.git
