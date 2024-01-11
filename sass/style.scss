@@ -631,6 +631,11 @@ section .content-boletin {
                 height: 400px;
                 display: block;
                 margin: 0 auto;
+                display: inline-block;
+                margin: 0 0.5rem;
+            }
+
+
 
             }
 
@@ -667,5 +672,4 @@ section .content-boletin {
     div {
         grid-template-columns: 1fr; 
     }
-}
 }
