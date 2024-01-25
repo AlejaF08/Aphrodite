@@ -1,0 +1,97 @@
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 26px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	p {
+		font-size: 16px;
+		padding: 1rem;
+	}
+	.header_flex-carrito img {
+		margin: 0 auto;
+		width: 35%;
+	}
+	nav#nav ul {
+		flex-wrap: wrap;
+		padding: 0;
+	}
+	#nav ul li a {
+		font-size: 22px;
+	}
+	#bannerproductos {
+		margin: 2rem auto 0 auto;
+		padding: 30px 22px 30px;
+
+		& > h1 {
+			margin: 11px auto 40px auto;
+		}
+	}
+	.flex_prod {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	#footer {
+		height: auto;
+	}
+	#tiendas {
+		margin: 2rem 0 0 0;
+
+		.tiendas__ubicacion iframe {
+			height: 280px;
+			width: 100%;
+		}
+		.tiendas__text {
+			font-size: 25px;
+		}
+		.tiendas__box p {
+			font-size: 16px;
+			padding: 0.5rem;
+		}
+		.ax-form fieldset {
+			width: 100%;
+			margin: 0 0 1rem 0;
+		}
+		.h2pc {
+			font-size: 25px;
+			padding: 0 1rem;
+			margin: 0rem 0 1rem 0;
+
+			& + p {
+				padding: 0 1rem;
+			}
+		}
+		section .content-boletin {
+			padding: 1rem 0 0 0;
+			margin: 2rem 0 0 0px;
+		}
+		.guardar-btn {
+			justify-content: center;
+		}
+		.home section &:first-child {
+			padding: 9rem 0 0 0;
+		}
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.header_flex-carrito img {
+		width: 47%;
+	}
+
+	@media screen and (max-width: 420px) {
+		.header_flex-carrito img {
+			width: 64%;
+		}
+
+		@media screen and (max-width: 410px) {
+			section .content-boletin {
+				margin: 3rem 0 0 0px;
+			}
+		}
+	}
+}

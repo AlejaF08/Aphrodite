@@ -1,0 +1,61 @@
+.h1ti {
+	font-size: 30px;
+	text-align: left;
+	padding: 16px;
+}
+
+.h2ti {
+	font-size: 30px;
+	text-align: left;
+	padding: 16px;
+}
+
+.boxgrid {
+	img {
+		object-fit: cover;
+	}
+}
+
+.gridp3 {
+	grid-row-start: span 2;
+}
+
+.tiendas__container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	.tiendas__box {
+		width: 600px;
+		margin: 10px;
+		text-align: center;
+		background-color: rgb(247, 236, 243);
+		border-radius: 8px;
+		padding: 1rem;
+
+		p {
+			font-size: 20px;
+			font-weight: bold;
+		}
+	}
+
+	.tiendas__ubicacion {
+		width: 100%;
+		border: 0;
+
+		iframe {
+			width: 95%;
+			height: 480px;
+		}
+	}
+}
+
+#tiendas {
+	margin: 3rem 0 0 0;
+}
+
+.tiendas__text {
+	font-size: 31px;
+	margin: 1rem 0 0 0;
+	color: #d48686;
+}
