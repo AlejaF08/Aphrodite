@@ -1,0 +1,21 @@
+/*--------------ESTILOS RESET--------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li , a {
+    display: inline-block;
+    list-style: none;
+    font-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+#body {
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Italiana', sans-serif;
+    position: relative;
+    background-color: #F3D8E8;
+}
